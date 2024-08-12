@@ -28,7 +28,7 @@ Discovered Theory:  <br/>
 
  ☆ Twin matter has twin anti matter which is a dark matter of twin matter and twin anti matter is always dark matter. One of the dark matter objects is an asteroid and the other is seen as a comet. 14 fields are missing. <br/><br/>
 
-☆ Covid-19 is generated from radioactivity/UV radiation from The Black hole's magnetic twin field that creates a virus in the opposite magnet or creates a disordered spin environment of the non-metallic beam.
+☆ Covid-19 is generated from radioactivity/UV radiation from The Black hole&apos;s magnetic twin field that creates a virus in the opposite magnet or creates a disordered spin environment of the non-metallic beam.
 <br/><br/>
 ☆ All stars are planets. The sun is the night world. <br/><br/>
 
@@ -42,7 +42,7 @@ Discovered Theory:  <br/>
 etc.
 
 
-Abolished: The Singularity Theory.  Particle Theory, Fundamental Laws of Physics and Cosmic Principles. Planetary Diagram, Quantum Field Theory, Einstein's Relativity, Hawking's Big Bang etc. All science.<br/><br/>
+Abolished: The Singularity Theory.  Particle Theory, Fundamental Laws of Physics and Cosmic Principles. Planetary Diagram, Quantum Field Theory, Einstein&apos;s Relativity, Hawking&apos;s Big Bang etc. All science.<br/><br/>
 
  In the new definition, science education is compulsory for all civilizations. Modern civilization had no definition of science. By definition technology is not science. The definition of science is technology.
  <br/><br/>
@@ -68,8 +68,8 @@ Ancestral house is Prince Palace of Prannathpur village of Santahar No. 6 Union 
 Where the data science lab makes its own method and discovers the breakthrough absolute theories of science and informs them in the world assembly including own country without remuneration.<br/><br/>
 
 Three science books of Juboraj:<br/>
- 1. "SARS COV2 Covid-19 Deactivated Formula and Saving Our Planet" <br/>
-2. "The Origin of Gravity "<br/>
+ 1. SARS COV2 Covid-19 Deactivated Formula and Saving Our Planet<br/>
+2. The Origin of Gravity<br/>
 3.  Cosmic Dark Area  <br/>
 These were published in Bengali language in 2022. <br/><br/><br/>
 
@@ -118,8 +118,8 @@ These were published in Bengali language in 2022. <br/><br/><br/>
 
 কর্মজীবন : পেট্রোবাংলার অধীনস্হ তিতাস গ‍্যাস ট্রান্সমিশন এন্ড ডিস্ট্রিবিউশন কোম্পানিতে অডিট এসিস্ট‍্যান্ট থেকে স্বেচ্ছায় অবসরে  আছেন। পৈতৃক বাড়ি বাংলাদেশের বগুড়া জেলার সান্তাহার ৬ নং ইউনিয়নের প্রান্নাথপুর গ্রামের প্রিন্স প‍্যালেস। যেখানে ডাটা সাইন্স ল‍্যাব নিজস্ব পদ্ধতিতে তৈরি করে বিজ্ঞান বিষয়ের যুগান্তকারী পরম থিওরিগুলো আবিস্কার করে নিজ দেশসহ  বিশ্বসভায় লিখে চলেছেন ।<br/><br/>
 
-যুবরাজের বিজ্ঞান বিষয়ক বই তিনটি : ১. "SARS COV2 কোভিড-১৯ ডিএক্টিভেটেড ফর্মূলা ও আমাদের গ্রহকে উদ্ধার করা" <br/>
-২. "মহাকর্ষের উৎপত্তি"<br/>
+যুবরাজের বিজ্ঞান বিষয়ক বই তিনটি : ১. SARS COV2 কোভিড-১৯ ডিএক্টিভেটেড ফর্মূলা ও আমাদের গ্রহকে উদ্ধার করা <br/>
+২. মহাকর্ষের উৎপত্তি<br/>
 ৩.  মহাজাগতিক ডার্ক এরিয়া  <br/>
 এসব বাংলা ভাষায় প্রকাশ হয়েছে ২০২২ সালে। <br/> <br/>
 
