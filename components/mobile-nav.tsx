@@ -36,6 +36,9 @@ export function MobileNav() {
           <MobileLink onOpenChange={setOpen} href="/about">
             About
           </MobileLink>
+          <MobileLink onOpenChange={setOpen} href="/founder">
+            Founder
+          </MobileLink>
           <Link target="_blank" rel="noreferrer" href={siteConfig.links.facebook}>
             Facebook
           </Link>
