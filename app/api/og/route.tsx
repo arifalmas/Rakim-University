@@ -1,6 +1,6 @@
-import { NextRequest } from "next/server";
-import { ImageResponse } from "next/og";
 import { siteConfig } from "@/config/site";
+import { ImageResponse } from "next/og";
+import { NextRequest } from "next/server";
 
 export const runtime = "edge";
 
@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
           <div tw="flex items-center w-full justify-between">
             <div tw="flex text-xl">{siteConfig.url}</div>
             <div tw="flex items-center text-xl">
-              <div tw="flex ml-2">{siteConfig.links.github}</div>
+              <div tw="flex ml-2">{siteConfig.links.facebook}</div>
             </div>
           </div>
         </div>
