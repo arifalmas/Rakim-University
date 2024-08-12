@@ -1,10 +1,10 @@
 "use client";
 
 import { siteConfig } from "@/config/site";
-import { Icons } from "./icons";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
+import { Icons } from "./icons";
 
 export function MainNav() {
   const pathname = usePathname();
@@ -31,6 +31,15 @@ export function MainNav() {
         )}
       >
         About
+      </Link>
+      <Link
+        href="/founder"
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
+          pathname === "/founder" ? "text-foreground" : "text-foreground/60"
+        )}
+      >
+        Founder
       </Link>
     </nav>
   );

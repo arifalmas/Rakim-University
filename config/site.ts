@@ -4,8 +4,8 @@ export const siteConfig = {
   description: "Nextjs 14 blog using velite, tailwind and shadcn",
   author: "Saiful Islam Juboraj",
   links: {
-    twitter: "https://twitter.com/jollyshopland",
-    github: "https://github.com/jolbol1",
+    twitter: "https://twitter.com/juborajI",
+    facebook: "https://www.facebook.com/saiful.alam.73550?mibextid=ZbWKwL",
     personalSite: "https://jamesshopland.com",
   },
 };

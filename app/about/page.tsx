@@ -1,5 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { siteConfig } from "@/config/site";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,18 +18,7 @@ export default async function AboutPage() {
       </div>
       <hr className="my-8" />
       <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
-        <div className="min-w-48 max-w-48 flex flex-col gap-2">
-          <Avatar className="h-48 w-48">
-            <AvatarImage src="/" alt={siteConfig.author} />
-            <AvatarFallback>Avatar</AvatarFallback>
-          </Avatar>
-          <h2 className="text-xl mt-1 font-bold text-center break-words">
-            {siteConfig.author}
-          </h2>
-          <p className="text-muted-foreground text-center break-words">
-          Student, Scientist, and Founder
-          </p>
-        </div>
+    
         <p className="text-muted-foreground text-lg py-4">
         Establishment of the Definition of Science: The Emergence of Rakim University
 
