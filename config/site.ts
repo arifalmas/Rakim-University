@@ -6,7 +6,6 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/juborajI",
     facebook: "https://www.facebook.com/saiful.alam.73550?mibextid=ZbWKwL",
-    personalSite: "https://jamesshopland.com",
   },
 };
 
