@@ -14,7 +14,8 @@ export default function Home() {
             Rakim University
           </h1>
           <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
-          Establishment of the Definition of Science: The Emergence of Rakim University
+          THE BLACK HOLE PAIR CREATION 
+          Rakim University announces new definition
           </p>
           <div className="flex flex-col gap-4 justify-center sm:flex-row">
             <Link
