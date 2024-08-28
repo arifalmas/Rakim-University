@@ -14,7 +14,7 @@ export default function Home() {
             Rakim University
           </h1>
           <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
-          THE BLACK HOLE PAIR CREATION 
+          THE BLACK HOLE PAIR CREATION <br/>
           Rakim University announces new definition
           </p>
           <div className="flex flex-col gap-4 justify-center sm:flex-row">
