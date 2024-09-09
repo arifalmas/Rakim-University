@@ -31,7 +31,7 @@ export function MobileNav() {
         </MobileLink>
         <div className="flex flex-col gap-3 mt-3">
           <MobileLink onOpenChange={setOpen} href="/blog">
-            Blog
+           My Doctrine
           </MobileLink>
           <MobileLink onOpenChange={setOpen} href="/about">
             About
