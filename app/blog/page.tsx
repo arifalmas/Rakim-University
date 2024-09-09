@@ -5,7 +5,7 @@ import { getAllTags, sortPosts, sortTagsByCount } from "@/lib/utils";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "My blog",
+  title: "My Doctrine",
   description: "This is a description",
 };
 
