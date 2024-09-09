@@ -18,7 +18,7 @@ export function MainNav() {
         href="/blog"
         className={cn(
           "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
-          pathname === "/blog" ? "text-foreground" : "text-foreground/60"
+          pathname === "/Absolute Doctrine" ? "text-foreground" : "text-foreground/60"
         )}
       >
         Blog
