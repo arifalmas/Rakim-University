@@ -36,7 +36,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         <div className="flex-1 space-y-4">
           <h1 className="inline-block font-black text-4xl lg:text-5xl">My Doctrine</h1>
           <p className="text-xl text-muted-foreground">
-          Establishment of the Definition of Science: 
+          Establishment of the Definition of THE BLACK HOLE Science: 
           </p>
         </div>
       </div>
