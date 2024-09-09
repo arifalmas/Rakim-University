@@ -22,7 +22,7 @@ export default function Home() {
               href="/blog"
               className={cn(buttonVariants({ size: "lg" }), "w-full mt-8 sm:w-fit")}
             >
-              View our blogs
+              View doctrine 
             </Link>
             {/* <Link
               href={siteConfig.links.github}
