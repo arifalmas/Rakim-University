@@ -3,6 +3,7 @@ import { PostItem } from "@/components/post-item";
 import { buttonVariants } from "@/components/ui/button";
 import { cn, sortPosts } from "@/lib/utils";
 import Link from "next/link";
+import Image from 'next/image'
 
 export default function Home() {
   const latestPosts = sortPosts(posts).slice(0, 5);
@@ -10,6 +11,8 @@ export default function Home() {
     <>
       <section className="space-y-6 pb-8 pt-32 md:pb-12 md:mt-10  lg:py-48">
         <div className="container flex flex-col gap-4 text-center">
+              <Image src="./2024-10-12.jpg" alt="" />
+
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-balance">
             Rakim University
           </h1>
