@@ -1,92 +1,75 @@
 import { posts } from "#site/content";
-import { MDXContent } from "@/components/mdx-components";
-import { Tag } from "@/components/tag";
-import { siteConfig } from "@/config/site";
-import "@/styles/mdx.css";
+import { PostItem } from "@/components/post-item";
+import { QueryPagination } from "@/components/query-pagination";
+import { getAllTags, sortPosts, sortTagsByCount } from "@/lib/utils";
 import { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { notFound } from "next/navigation";
 
-interface PostPageProps {
-  params: {
-    slug: string[];
+export const metadata: Metadata = {
+  title: "My Doctrine",
+  description: " Establishment of the Definition of THE BLACK HOLE Science",
+};
+
+const POSTS_PER_PAGE = 15;
+
+interface BlogPageProps {
+  searchParams: {
+    page?: string;
   };
 }
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["400", "500", "600", "700"],
-});
+export default async function BlogPage({ searchParams }: BlogPageProps) {
+  const currentPage = Number(searchParams?.page) || 1;
+  const sortedPosts = sortPosts(posts.filter((post) => post.published));
+  const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
 
-async function getPostFromParams(params: PostPageProps["params"]) {
-  const slug = params?.slug?.join("/");
-  const post = posts.find((post) => post.slugAsParams === slug);
-  return post;
-}
+  const displayPosts = sortedPosts.slice(
+    POSTS_PER_PAGE * (currentPage - 1),
+    POSTS_PER_PAGE * currentPage
+  );
 
-export async function generateMetadata({
-  params,
-}: PostPageProps): Promise<Metadata> {
-  const post = await getPostFromParams(params);
-
-  if (!post) return {};
-
-  const ogSearchParams = new URLSearchParams();
-  ogSearchParams.set("title", post.title);
-
-  return {
-    title: post.title,
-    description: post.description,
-    authors: { name: siteConfig.author },
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      type: "article",
-      url: post.slug,
-      images: [
-        {
-          url: `/api/og?${ogSearchParams.toString()}`,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.description,
-      images: [`/api/og?${ogSearchParams.toString()}`],
-    },
-  };
-}
-
-export async function generateStaticParams(): Promise<
-  PostPageProps["params"][]
-> {
-  return posts.map((post) => ({ slug: post.slugAsParams.split("/") }));
-}
-
-export default async function PostPage({ params }: PostPageProps) {
-  const post = await getPostFromParams(params);
-
-  if (!post || !post.published) notFound();
+  const tags = getAllTags(posts);
+  const sortedTags = sortTagsByCount(tags);
 
   return (
-    <article className="container pb-6 pt-20 prose prose-lg dark:prose-invert max-w-4xl mx-auto">
-
-      <h1 className="mb-2">{post.title}</h1>
-      <div className="flex gap-2 mb-2">
-        {post.tags?.map((tag) => (
-          <Tag tag={tag} key={tag} />
-        ))}
+    <div className="container max-w-4xl py-6 lg:py-10">
+      <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
+        <div className="flex-1 space-y-4">
+          <h1 className="inline-block font-black text-4xl lg:text-5xl">My Doctrine</h1>
+          <p className="text-xl text-muted-foreground">
+            Establishment of the Definition of THE BLACK HOLE Science:
+          </p>
+        </div>
       </div>
-      {post.description && (
-        <p className="text-xl mt-0 text-muted-foreground">{post.description}</p>
-      )}
-      <hr className="my-4" />
-      <MDXContent code={post.body} />
-    </article>
+      <div className="grid grid-cols-12 md:gap-28 mt-8">
+        <div className="col-span-12 col-start-1 sm:col-span-8">
+          <hr />
+          {displayPosts?.length > 0 ? (
+            <ul className="flex flex-col">
+              {displayPosts.map((post) => {
+                const { slug, date, title, description, tags } = post;
+                return (
+                  <li key={slug}>
+                    <PostItem
+                      slug={slug}
+                      date={date}
+                      title={title}
+                      description={description}
+                      tags={tags}
+                    />
+                  </li>
+                );
+              })}
+            </ul>
+          ) : (
+            <p>Nothing to see here yet</p>
+          )}
+          <QueryPagination
+            totalPages={totalPages}
+            className="justify-end mt-4"
+          />
+        </div>
+
+      </div>
+    </div>
   );
 }

@@ -47,7 +47,7 @@ export function SiteFooter() {
           <p>© {new Date().getFullYear()} Rakim University. All rights reserved.</p>
           <p className="mt-1">
             Developed by{" "}
-            <span className="font-semibold hover:underline cursor-pointer">
+            <span className="font-medium text-red-200  cursor-pointer">
               <a href="https://www.arifalmas.com/" target="blank"> Arif Almas</a>
             </span>
           </p>

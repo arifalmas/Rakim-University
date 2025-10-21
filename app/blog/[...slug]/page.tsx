@@ -72,7 +72,8 @@ export default async function PostPage({ params }: PostPageProps) {
   }
 
   return (
-    <article className="container  pb-6 pt-20 prose dark:prose-invert max-w-4xl mx-auto">
+    <article className="container pb-6 pt-20 prose prose-lg dark:prose-invert max-w-4xl mx-auto font-sans font-normal">
+
       <h1 className="mb-2">{post.title}</h1>
       <div className="flex gap-2 mb-2">
         {post.tags?.map((tag) => (
